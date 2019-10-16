@@ -1,0 +1,64 @@
+
+button:hover {
+  cursor: pointer;
+}
+  
+.playboard {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  width: 450px;
+  height: 450px;
+  color: black;
+  text-shadow: 2px 2px #fffbfb;
+  background-color: rgba(175, 39, 39, 0.603);
+  box-shadow: 0px 0px 20px black;
+}
+ .playboard div:first-child {
+   border-right: 3px solid rgb(34, 16, 16);;
+   border-bottom: 3px solid rgb(34, 16, 16);;
+ }
+ .playboard div:nth-child(2) {
+   border-bottom: 3px solid rgb(34, 16, 16);;
+ }
+ .playboard div:nth-child(3n) {
+   border-left: 3px solid rgb(34, 16, 16);;
+   border-bottom: 3px solid rgb(34, 16, 16);;
+ }
+ .playboard div:nth-child(4) {
+   border-right: 3px solid rgb(34, 16, 16);;
+   border-bottom: 3px solid rgb(34, 16, 16);;
+ }
+ .playboard div:nth-child(5) {
+   border-bottom: 3px solid rgb(34, 16, 16);;
+ }
+ .playboard div:nth-child(7) {
+   border-right: 3px solid rgb(34, 16, 16);
+ }
+ .playboard div:nth-child(9) {
+   border-bottom: none;
+ }
+ .playboard .spot {
+   text-align: center;
+ }
+ .playboard .spot h1 {
+   font-size: 4rem;
+   padding: 0;
+   align-self: center;
+   justify-self: center;
+   height: 100%;
+ }
+ .playboard .color-win {
+   background-color: rgba(130, 29, 197, 0.685);
+   transition: 1.5s;
+ }
+ .playboard .color-lose {
+   background-color: rgba(238, 196, 82, 0.664);
+   transition: 1.5s;
+ }
+  
+
+  
